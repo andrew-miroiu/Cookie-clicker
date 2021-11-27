@@ -1,0 +1,5 @@
+F:\Development\C#\Cookie Clicker\bin\Debug\net5.0-windows\publish\WinFormsApp3.exe
+F:\Development\C#\Cookie Clicker\bin\Debug\net5.0-windows\publish\WinFormsApp3.dll
+F:\Development\C#\Cookie Clicker\bin\Debug\net5.0-windows\publish\WinFormsApp3.deps.json
+F:\Development\C#\Cookie Clicker\bin\Debug\net5.0-windows\publish\WinFormsApp3.runtimeconfig.json
+F:\Development\C#\Cookie Clicker\bin\Debug\net5.0-windows\publish\WinFormsApp3.pdb

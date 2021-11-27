@@ -12,54 +12,34 @@ namespace WinFormsApp3
 {
     public partial class Form1 : Form
     {
-
-        private int counter = 0;
-        private int costButton2 = 100, costButton3 = 250, costTimer1 = 2500;
-        private int counterIncreaser = 1;
-        private int counterIncreaserForSeconds = 0;
-        private bool verifyPressedButton4 = false;
-        //private System.Timers.Timer timer;
+        private GameViewModel viewModel;
 
         public Form1()
         {
             InitializeComponent();
 
+            this.viewModel = new GameViewModel();
+
             this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
-
-            //setupTimer();
         }
-
-        /*private void setupTimer()
-        {
-            timer = new System.Timers.Timer();
-            timer.Enabled = true;
-            timer.Interval = 1000;
-            timer.Elapsed += new System.Timers.ElapsedEventHandler(onTimerElapsed);
-            timer.Start();
-        }
-
-        private void onTimerElapsed(object sender, System.Timers.ElapsedEventArgs e)
-        {
-            Console.WriteLine("onTimerElapsed");
-        }*/
 
         private void button1_Click(object sender, EventArgs e)
         {
-            increaseCounter();
-            this.label1.Text = string.Format("Cookies: {0}", counter);
+            viewModel.increaseCounter();
+            this.label1.Text = string.Format("Cookies: {0}", viewModel.CurrentCounter);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (counter >= costButton2)
+            if (viewModel.CurrentCounter >= viewModel.ClickFirstUpgradeCost)
             {
-                increasingCounterIncreaser(1);
-                counter = counter - costButton2;
-                costButton2 = costButton2 + 100;
-                this.label2.Text = "COST:" + costButton2;
-                this.label3.Text = "Cookies per click: " + counterIncreaser;
-                this.label1.Text = string.Format("Cookies: {0}", counter);
+                viewModel.increasingCounterIncreaser(GameViewModel.firstUpgradeIncreasingValue);
+                viewModel.CurrentCounter = viewModel.CurrentCounter - viewModel.ClickFirstUpgradeCost;
+                viewModel.ClickFirstUpgradeCost = viewModel.ClickFirstUpgradeCost + GameViewModel.firstUpgradeCostValue;
+                this.label2.Text = "COST:" + viewModel.ClickFirstUpgradeCost;
+                this.label3.Text = "Cookies per click: " + viewModel.CounterIncreaser;
+                this.label1.Text = string.Format("Cookies: {0}", viewModel.CurrentCounter);
             }
 
             else
@@ -69,14 +49,14 @@ namespace WinFormsApp3
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            if (counter >= costButton3)
+            if (viewModel.CurrentCounter >= viewModel.ClickSecondUpgradeCost)
             {
-                increasingCounterIncreaser(5);
-                counter = counter - costButton3;
-                costButton3 = costButton3 + 250;
-                this.label4.Text = "COST: " + costButton3;
-                this.label3.Text = "Cookies per click: " + counterIncreaser;
-                this.label1.Text = string.Format("Cookies: {0}", counter);
+                viewModel.increasingCounterIncreaser(GameViewModel.secondUpgradeIncreasingValue);
+                viewModel.CurrentCounter = viewModel.CurrentCounter - viewModel.ClickSecondUpgradeCost;
+                viewModel.ClickSecondUpgradeCost = viewModel.ClickSecondUpgradeCost + GameViewModel.secondUpgradeCostValue;
+                this.label4.Text = "COST: " + viewModel.ClickSecondUpgradeCost;
+                this.label3.Text = "Cookies per click: " + viewModel.CounterIncreaser;
+                this.label1.Text = string.Format("Cookies: {0}", viewModel.CurrentCounter);
             }
             else
             {
@@ -86,14 +66,14 @@ namespace WinFormsApp3
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (counter >= costTimer1)
+            if (viewModel.CurrentCounter >= viewModel.TimerUpgradeCost)
             {
-                counterIncreaserForSeconds = counterIncreaserForSeconds + 1;
-                counter = counter - costTimer1;
-                costTimer1 = costTimer1 + 2500;
-                this.costTimer.Text = "COST: " + costTimer1;
-                this.label7.Text = "Cookies per second: " + counterIncreaserForSeconds;
-                verifyPressedButton4 = true;
+                viewModel.TimerCounterIncreaser = viewModel.TimerCounterIncreaser + GameViewModel.TimerCounterIncreaserValue;
+                viewModel.CurrentCounter = viewModel.CurrentCounter - viewModel.TimerUpgradeCost;
+                viewModel.TimerUpgradeCost = viewModel.TimerUpgradeCost + GameViewModel.upgradeTimerCostValue;
+                this.costTimer.Text = "COST: " + viewModel.TimerUpgradeCost;
+                this.label7.Text = "Cookies per second: " + viewModel.TimerCounterIncreaser;
+                viewModel.IsTimerEnabled = true;
             }
             else
             {
@@ -103,10 +83,10 @@ namespace WinFormsApp3
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (verifyPressedButton4)
+            if (viewModel.IsTimerEnabled)
             {
-                this.label1.Text = string.Format("Cookies: {0}", counter);
-                counter = counter + counterIncreaserForSeconds;
+                this.label1.Text = string.Format("Cookies: {0}", viewModel.CurrentCounter);
+                viewModel.CurrentCounter += viewModel.TimerCounterIncreaser;
             }
         }
 
@@ -137,16 +117,6 @@ namespace WinFormsApp3
         private void notEnoughToBuy()
         {
             MessageBox.Show("You don't have enough cookies", "YOU'RE BANKRUPT", MessageBoxButtons.OKCancel);
-        }
-
-        private void increaseCounter()
-        {
-            counter = counter + counterIncreaser;
-        }
-
-        private void increasingCounterIncreaser(int n)
-        {
-            counterIncreaser = counterIncreaser + n;
         }
     }
 }

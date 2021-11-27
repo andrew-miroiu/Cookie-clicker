@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Development\\C#\\Cookie Clicker\\WinFormsApp3.csproj": {}
+    "F:\\Development\\Github repos\\Cookie-clicker\\src\\Cookie Clicker\\WinFormsApp3.csproj": {}
   },
   "projects": {
-    "F:\\Development\\C#\\Cookie Clicker\\WinFormsApp3.csproj": {
+    "F:\\Development\\Github repos\\Cookie-clicker\\src\\Cookie Clicker\\WinFormsApp3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Development\\C#\\Cookie Clicker\\WinFormsApp3.csproj",
+        "projectUniqueName": "F:\\Development\\Github repos\\Cookie-clicker\\src\\Cookie Clicker\\WinFormsApp3.csproj",
         "projectName": "WinFormsApp3",
-        "projectPath": "F:\\Development\\C#\\Cookie Clicker\\WinFormsApp3.csproj",
+        "projectPath": "F:\\Development\\Github repos\\Cookie-clicker\\src\\Cookie Clicker\\WinFormsApp3.csproj",
         "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
-        "outputPath": "F:\\Development\\C#\\Cookie Clicker\\obj\\",
+        "outputPath": "F:\\Development\\Github repos\\Cookie-clicker\\src\\Cookie Clicker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -36,3 +36,22 @@ F:\Development\C#\Cookie Clicker\obj\Debug\net5.0-windows\WinFormsApp3.dll
 F:\Development\C#\Cookie Clicker\obj\Debug\net5.0-windows\ref\WinFormsApp3.dll
 F:\Development\C#\Cookie Clicker\obj\Debug\net5.0-windows\WinFormsApp3.pdb
 F:\Development\C#\Cookie Clicker\obj\Debug\net5.0-windows\WinFormsApp3.genruntimeconfig.cache
+F:\Development\Github repos\Cookie-clicker\src\Cookie Clicker\obj\Debug\net5.0-windows\WinFormsApp3.csproj.AssemblyReference.cache
+F:\Development\Github repos\Cookie-clicker\src\Cookie Clicker\obj\Debug\net5.0-windows\WinFormsApp3.Form1.resources
+F:\Development\Github repos\Cookie-clicker\src\Cookie Clicker\obj\Debug\net5.0-windows\WinFormsApp3.Properties.Resources.resources
+F:\Development\Github repos\Cookie-clicker\src\Cookie Clicker\obj\Debug\net5.0-windows\WinFormsApp3.csproj.GenerateResource.cache
+F:\Development\Github repos\Cookie-clicker\src\Cookie Clicker\obj\Debug\net5.0-windows\WinFormsApp3.GeneratedMSBuildEditorConfig.editorconfig
+F:\Development\Github repos\Cookie-clicker\src\Cookie Clicker\obj\Debug\net5.0-windows\WinFormsApp3.AssemblyInfoInputs.cache
+F:\Development\Github repos\Cookie-clicker\src\Cookie Clicker\obj\Debug\net5.0-windows\WinFormsApp3.AssemblyInfo.cs
+F:\Development\Github repos\Cookie-clicker\src\Cookie Clicker\obj\Debug\net5.0-windows\WinFormsApp3.csproj.CoreCompileInputs.cache
+F:\Development\Github repos\Cookie-clicker\src\Cookie Clicker\obj\Debug\net5.0-windows\WinFormsApp3.dll
+F:\Development\Github repos\Cookie-clicker\src\Cookie Clicker\obj\Debug\net5.0-windows\ref\WinFormsApp3.dll
+F:\Development\Github repos\Cookie-clicker\src\Cookie Clicker\obj\Debug\net5.0-windows\WinFormsApp3.pdb
+F:\Development\Github repos\Cookie-clicker\src\Cookie Clicker\bin\Debug\net5.0-windows\WinFormsApp3.exe
+F:\Development\Github repos\Cookie-clicker\src\Cookie Clicker\bin\Debug\net5.0-windows\WinFormsApp3.deps.json
+F:\Development\Github repos\Cookie-clicker\src\Cookie Clicker\bin\Debug\net5.0-windows\WinFormsApp3.runtimeconfig.json
+F:\Development\Github repos\Cookie-clicker\src\Cookie Clicker\bin\Debug\net5.0-windows\WinFormsApp3.runtimeconfig.dev.json
+F:\Development\Github repos\Cookie-clicker\src\Cookie Clicker\bin\Debug\net5.0-windows\WinFormsApp3.dll
+F:\Development\Github repos\Cookie-clicker\src\Cookie Clicker\bin\Debug\net5.0-windows\ref\WinFormsApp3.dll
+F:\Development\Github repos\Cookie-clicker\src\Cookie Clicker\bin\Debug\net5.0-windows\WinFormsApp3.pdb
+F:\Development\Github repos\Cookie-clicker\src\Cookie Clicker\obj\Debug\net5.0-windows\WinFormsApp3.genruntimeconfig.cache
